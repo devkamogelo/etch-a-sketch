@@ -5,6 +5,8 @@
 
 body{
     display: flex;
+    flex-direction: column;
+    background-color: #132440;
     align-items: center;
     justify-content: center;
 }
@@ -13,5 +15,16 @@ body{
     width: 860px;
     height: 860px;
     display: flex;
+    background-color: aliceblue;
     flex-direction: column;
+}
+
+button{
+    padding: 16px 18px;
+    margin: 12px;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #16476A;
+    font-size: 18px;
 }

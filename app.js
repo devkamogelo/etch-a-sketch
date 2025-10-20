@@ -1,4 +1,4 @@
-var gridSize = 36;
+function drawGrid(gridSize){
 
 const container = document.querySelector("#container");
 
@@ -17,5 +17,15 @@ for(let i = 1; i <= gridSize; i++){
         line.appendChild(star);
     }
     container.appendChild(line);
-}
+}}
 
+drawGrid(16)
+
+function changeNumOfSquares(){
+    gridSize = prompt("Enter Number of Square. max 100");
+    if (gridSize > 100){
+        gridSize = 100;
+    }
+    container.replaceChildren();
+    drawGrid(gridSize)
+}
